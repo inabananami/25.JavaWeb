@@ -23,10 +23,12 @@
         <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-autoconfigure/pom.xml" />
         <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-starter/pom.xml" />
         <option value="$PROJECT_DIR$/big-event/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCode/springboot-auto-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/SpringCode/springboot-auto-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-config-file/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-register/pom.xml" />
       </set>
