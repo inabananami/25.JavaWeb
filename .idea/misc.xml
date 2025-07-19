@@ -8,7 +8,28 @@
         <option value="$PROJECT_DIR$/MybatisDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootStart/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-create-manual/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-config-file/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-register/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-auto-config/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-auto-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-create-manual/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/SpringBootStart/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisCode/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisCode/MybatisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/big-event/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot-config-file/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-register/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
