@@ -37,11 +37,5 @@
       <version>3.0.4</version>
       <scope>compile</scope>
     </dependency>
-
-    <dependency>
-      <groupId>com.itheima</groupId>
-      <artifactId>dmybatis-spring-boot-autoconfigure</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
   </dependencies>
 </project>

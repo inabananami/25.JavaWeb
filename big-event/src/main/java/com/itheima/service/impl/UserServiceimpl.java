@@ -4,9 +4,10 @@ import com.itheima.mapper.UserMapper;
 import com.itheima.pojo.User;
 import com.itheima.service.UserService;
 import com.itheima.utils.Md5Util;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import static jdk.internal.org.jline.utils.Colors.s;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Service
@@ -20,7 +21,7 @@ public class UserServiceimpl implements UserService {
     }
 
     @Override
-    public void register(String username, String password) {
+    public void register(String username,String password) {
         //加密
         String md5String = Md5Util.getMD5String(password);
         //添加

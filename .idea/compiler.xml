@@ -7,8 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootStart" />
+        <module name="dmybatis-spring-boot-autoconfigure" />
         <module name="mybatis" />
+        <module name="springboot-auto-config" />
+        <module name="springboot-create-manual" />
         <module name="springboot-mybatis" />
+        <module name="dmybatis-spring-boot-starter" />
         <module name="big-event" />
       </profile>
       <profile name="Annotation profile for MybatisDemo" enabled="true">
@@ -19,30 +24,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="MybatisDemo" />
-      </profile>
-      <profile name="Annotation profile for SpringBootStart" enabled="true">
-        <sourceOutputDir name="../../spring-code/SpringBootStart/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../spring-code/SpringBootStart/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="SpringBootStart" />
-      </profile>
-      <profile name="Annotation profile for dmybatis-spring-boot-autoconfigure" enabled="true">
-        <sourceOutputDir name="../../spring-code/dmybatis-spring-boot-autoconfigure/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../spring-code/dmybatis-spring-boot-autoconfigure/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="dmybatis-spring-boot-autoconfigure" />
-      </profile>
-      <profile name="Annotation profile for dmybatis-spring-boot-starter" enabled="true">
-        <sourceOutputDir name="../../spring-code/dmybatis-spring-boot-starter/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../spring-code/dmybatis-spring-boot-starter/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="dmybatis-spring-boot-starter" />
-      </profile>
-      <profile name="Annotation profile for springboot-create-manual" enabled="true">
-        <sourceOutputDir name="../../spring-code/springboot-create-manual/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../spring-code/springboot-create-manual/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="springboot-create-manual" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -55,6 +36,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MybatisDemo" options="-parameters" />
       <module name="SpringBootStart" options="-parameters" />
+      <module name="big-event" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="springboot-auto-config" options="-parameters" />
       <module name="springboot-config-file" options="-parameters" />
