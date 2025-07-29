@@ -4,16 +4,21 @@ import com.itheima.mapper.UserMapper;
 import com.itheima.pojo.User;
 import com.itheima.service.UserService;
 import com.itheima.utils.Md5Util;
+import com.itheima.utils.ThreadLocalUtil;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.time.LocalDateTime;
+import java.util.Map;
 
 
 @Service
 public class UserServiceimpl implements UserService {
     @Autowired
     private UserMapper UserMapper;
+
     @Override
     public User findByUserName(String username) {
         User u = UserMapper.findByUserName(username);
@@ -26,5 +31,25 @@ public class UserServiceimpl implements UserService {
         String md5String = Md5Util.getMD5String(password);
         //添加
         UserMapper.add(username, md5String);
+    }
+
+    @Override
+    public void update(User user) {
+        user.setUpdateTime(LocalDateTime.now());
+        UserMapper.update(user);
+    }
+
+    @Override
+    public void updateAvatar(String avatarUrl) {
+        Map<String, Object> map = ThreadLocalUtil.get();
+        Integer id = (Integer) map.get("id");
+        UserMapper.updateAvatar(avatarUrl, id);
+    }
+
+    @Override
+    public void updatePwd(String newPwd) {
+        Map<String, Object> map = ThreadLocalUtil.get();
+        Integer id = (Integer) map.get("id");
+        UserMapper.updatePwd(Md5Util.getMD5String(newPwd), id);
     }
 }

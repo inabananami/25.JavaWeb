@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/25.JavaWeb.iml" filepath="$PROJECT_DIR$/.idea/25.JavaWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MybatisCode/MybatisCode.iml" filepath="$PROJECT_DIR$/MybatisCode/MybatisCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-code/spring-code.iml" filepath="$PROJECT_DIR$/spring-code/spring-code.iml" />
     </modules>
   </component>

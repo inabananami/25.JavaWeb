@@ -16,20 +16,32 @@
         <module name="dmybatis-spring-boot-starter" />
         <module name="big-event" />
       </profile>
-      <profile name="Annotation profile for MybatisDemo" enabled="true">
+      <profile name="Annotation profile for blogDemo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="blogDemo" />
         <module name="MybatisDemo" />
+      </profile>
+      <profile name="Annotation profile for JapaneseDemo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="japaneseDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-auto-config (1)" target="17" />
       <module name="springboot-config-file" target="17" />
       <module name="springboot-register" target="17" />
+      <module name="xm-blog" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,12 +49,15 @@
       <module name="MybatisDemo" options="-parameters" />
       <module name="SpringBootStart" options="-parameters" />
       <module name="big-event" options="-parameters" />
+      <module name="blogDemo" options="-parameters" />
+      <module name="japaneseDemo" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="springboot-auto-config" options="-parameters" />
       <module name="springboot-config-file" options="-parameters" />
       <module name="springboot-create-manual" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-register" options="-parameters" />
+      <module name="xm-blog" options="-parameters" />
     </option>
   </component>
 </project>
