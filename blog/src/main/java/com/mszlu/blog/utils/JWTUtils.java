@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class JWTUtils {
 
-    private static final String jwtToken = "123456Mszlu!@###$$";
+    private static final String jwtToken = " UnabletodecodeinputIndex12461outofboundsforlength256";
 
     public static String createToken(Long userId){
         Map<String,Object> claims = new HashMap<>();

@@ -18,7 +18,6 @@ public class LoginController {
     @PostMapping
     public Result login(@RequestBody LoginParam loginParam) {
         //登录功能
-
-        Result login(LoginParam loginParam);
+        return loginService.login(loginParam);
     }
 }
