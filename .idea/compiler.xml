@@ -17,15 +17,24 @@
         <module name="blog" />
         <module name="big-event" />
       </profile>
-      <profile name="Annotation profile for JapaneseDemo" enabled="true">
+      <profile name="Annotation profile for MybatisDemo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="MybatisDemo" />
+      </profile>
+      <profile name="Annotation profile for JapaneseDemo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath>
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="japaneseDemo" />
-        <module name="MybatisDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

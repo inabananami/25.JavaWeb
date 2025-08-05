@@ -6,5 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
+    //寻找数据库内账号
+    SysUser findUserByAccount(String account);
 }
 

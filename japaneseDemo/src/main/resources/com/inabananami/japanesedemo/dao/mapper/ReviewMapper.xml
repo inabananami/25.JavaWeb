@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inabananami.japanesedemo.dao.mapper.ReviewMapper">
+    <insert id="defaultAdd">
+        insert into review_log(user_id, word_id, quality, review_time, ease_factor, interval_days, next_review_time, repetition)
+        values(#{userId},#{wordId},5,#{reviewTime},2.5,0,#{nextReviewTime},0)
+    </insert>
+</mapper>

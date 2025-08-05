@@ -8,7 +8,7 @@ import com.mszlu.blog.dao.pojo.Article;
 import com.mszlu.blog.dao.pojo.SysUser;
 import com.mszlu.blog.service.ArticleService;
 import com.mszlu.blog.service.TagsService;
-import com.mszlu.blog.service.UserService;
+import com.mszlu.blog.service.SysUserService;
 import com.mszlu.blog.vo.ArticleVo;
 import com.mszlu.blog.vo.Result;
 import com.mszlu.blog.vo.TagVo;
@@ -26,7 +26,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleMapper articleMapper;
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
     @Autowired
     private TagsService tagsService;
 
@@ -35,7 +35,7 @@ public class ArticleServiceImpl implements ArticleService {
         ArticleVo articleVo = new ArticleVo();
         BeanUtils.copyProperties(article, articleVo);
         if (isAuthor) {
-            SysUser sysUser = userService.findUserById(article.getAuthorId());
+            SysUser sysUser = sysUserService.findUserById(article.getAuthorId());
             articleVo.setAuthor(sysUser.getNickname());
         }
         articleVo.setCreateDate(new DateTime(article.getCreateDate()).toString("yyyy-MM-dd HH:mm"));
