@@ -42,9 +42,14 @@ public class WordServiceImpl implements WordService {
     @Override
     public Result search(String keyWord) {
         List<WordVo> wordVoList = wordMapper.search(keyWord)
-                                                    .stream()
-                                                    .map(word -> word.toVo())
-                                                    .collect(Collectors.toList());
+                .stream()
+                .map(word -> word.toVo())
+                .collect(Collectors.toList());
         return Result.success(wordVoList);
+    }
+
+    @Override
+    public Word findWordById(Integer id) {
+        return wordMapper.findWordById(id);
     }
 }

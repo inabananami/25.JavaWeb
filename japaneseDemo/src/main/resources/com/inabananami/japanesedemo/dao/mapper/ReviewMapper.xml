@@ -7,4 +7,13 @@
         insert into review_log(user_id, word_id, quality, review_time, ease_factor, interval_days, next_review_time, repetition)
         values(#{userId},#{wordId},5,#{reviewTime},2.5,0,#{nextReviewTime},0)
     </insert>
+    <select id="findReviewByWordId" parameterType="com.inabananami.japanesedemo.dao.pojo.ReviewLog">
+        select * from review_log where word_id=#{id};
+    </select>
+    <update id="updateReviewLog">
+        update review_log set quality=#{quality},review_time=#{reviewTime},ease_factor=#{easeFactor}, interval_days=#{intervalDays},next_review_time=#{nextReviewTime},repetition=#{repetition} where id=#{id};
+    </update>
+    <select id="findByUserIdAndWordId" parameterType="com.inabananami.japanesedemo.dao.pojo.ReviewLog">
+        select * from review_log where user_id=#{userId} and word_id=#{wordId};
+    </select>
 </mapper>

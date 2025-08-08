@@ -1,5 +1,7 @@
 package com.inabananami.japanesedemo.vo.param;
 
+import jakarta.validation.constraints.Pattern;
+import jdk.jfr.Percentage;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ReviewParam {
     private double easefactor;
-    private int interval;
     private int repetition;
+    private int interval;
 }

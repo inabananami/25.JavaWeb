@@ -3,10 +3,40 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inabananami.japanesedemo.dao.mapper.UserMapper">
-    <update id="delete">
-        update user set status='inactive' where id=#{id};
+    <insert id="signUp">
+        insert into user(email,account,password,nickname,create_date,last_login)
+        values(#{email},#{account},#{password},#{nickname},now(),now());
+    </insert>
+    <select id="findUserByAccount" parameterType="com.inabananami.japanesedemo.dao.pojo.User">
+        select * from user where account=#{account};
+    </select>
+    <update id="setTimeWhenLogin">
+        update user set last_login=now() where id=#{userId};
     </update>
-    <update id="ban">
-        update user set status='banned' where id=#{id};
+    <select id="search" parameterType="com.inabananami.japanesedemo.vo.param.UserParam">
+        select * from user
+        where status='active'
+        and (
+            nickname like concat('%',#{keyword},'%')
+            or phone_number=#{keyword}
+            or email=#{keyword}
+        );
+    </select>
+    <update id="update">
+        update user
+        <set>
+            <if test="phone_number!=null">phone_number=#{phoneNumber},</if>
+            <if test="email!=null">email=#{email},</if>
+            <if test="gender!=null">gender=#{gender},</if>
+            <if test="avatar!=null">avatar=#{avatar},</if>
+            <if test="nickname!=null">nickname=#{nickname},</if>
+            <if test="birthday!=null">birthday=#{birthday},</if>
+            <if test="language_level!=null">languageLevel=#{languageLevel},</if>
+            <if test="daily_target!=null">daily_target=#{dailyTarget},</if>
+            <if test="known_word_count">known_word_count=#{knowWordCount}</if>
+        </set>
+    </update>
+    <update id="delete">
+        update user set status='inactive' where id=#{userId};
     </update>
 </mapper>

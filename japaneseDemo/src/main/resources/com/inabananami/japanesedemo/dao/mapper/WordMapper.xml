@@ -31,4 +31,7 @@
         or kana like concat('%',#{keyWord},'%')
         or romaji like concat('%',#{keyWord},'%')
     </select>
+    <select id="findWordById" parameterType="com.inabananami.japanesedemo.dao.pojo.Word">
+        select * from word where id=#{id};
+    </select>
 </mapper>

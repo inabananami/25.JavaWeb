@@ -18,4 +18,7 @@ public interface WordService {
 
     //按照输入单词模糊查询单词卡
     Result search(String keyWord);
+
+    //findWordById(开发者用)
+    Word findWordById(Integer id);
 }

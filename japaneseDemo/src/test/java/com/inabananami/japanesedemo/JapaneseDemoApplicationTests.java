@@ -1,13 +1,9 @@
 package com.inabananami.japanesedemo;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import com.inabananami.japanesedemo.utils.BCryptUtil;
 
-@SpringBootTest
 class JapaneseDemoApplicationTests {
-
-    @Test
-    void contextLoads() {
+    public static void main(String[] args) {
+        System.out.println(BCryptUtil.encode("password123"));
     }
-
 }

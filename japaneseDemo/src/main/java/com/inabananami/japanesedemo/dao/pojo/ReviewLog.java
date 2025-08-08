@@ -1,5 +1,6 @@
 package com.inabananami.japanesedemo.dao.pojo;
 
+import com.inabananami.japanesedemo.vo.param.ReviewParam;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,16 @@ public class ReviewLog {
         reviewLog.setUserId(word.getCreateUser());
         reviewLog.setReviewTime(now());
         reviewLog.setNextReviewTime(reviewLog.getReviewTime().plusDays(1));
+        return reviewLog;
+    }
+
+    public static ReviewLog updateReviewLog(ReviewParam reviewParam, ReviewLog reviewLog, int quality) {
+        reviewLog.setReviewTime(LocalDateTime.now());
+        reviewLog.setEaseFactor(reviewParam.getEasefactor());
+        reviewLog.setRepetition(reviewParam.getRepetition());
+        reviewLog.setIntervalDays(reviewParam.getInterval());
+        reviewLog.setQuality(quality);
+        reviewLog.setNextReviewTime(reviewLog.getReviewTime().plusDays(reviewLog.getIntervalDays()));
         return reviewLog;
     }
 }

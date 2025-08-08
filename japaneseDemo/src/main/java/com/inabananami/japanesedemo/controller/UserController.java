@@ -1,8 +1,11 @@
 package com.inabananami.japanesedemo.controller;
 
-import com.inabananami.japanesedemo.dao.pojo.User;
+import com.inabananami.japanesedemo.dto.LoginDto;
+import com.inabananami.japanesedemo.dto.UserDto;
 import com.inabananami.japanesedemo.service.UserService;
 import com.inabananami.japanesedemo.vo.Result;
+import com.inabananami.japanesedemo.vo.UserVo;
+import com.inabananami.japanesedemo.vo.param.SignUpParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +15,18 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @Autowired
     private UserService userService;
-
+    //用户注册
+    @PostMapping("/sign-up")
+    public Result signUp(@RequestBody @Validated SignUpParam signUpParam) {
+        return userService.signUp(signUpParam);
+    }
+    //用户登录
+    @PostMapping("/login")
+    public Result login(@RequestBody LoginDto loginDto) {
+        String account = loginDto.getAccount();
+        String password = loginDto.getPassword();
+        return userService.login(account,password);
+    }
     //模糊查询用户
     @GetMapping("/search-user")
     public Result searchUser(String keyWord) {
@@ -21,17 +35,12 @@ public class UserController {
 
     //更新用户信息
     @PostMapping("/update-user-info")
-    public Result updateUser(@RequestParam @Validated User user) {
-        return userService.update();
+    public Result updateUser(@RequestParam @Validated UserDto userDto) {
+         return userService.update(userDto);
     }
     //注销用户
     @PostMapping("/delete-user")
-    public Result deleteUser(@Validated Integer id) {
-        return userService.delete(id);
-    }
-    //封禁用户
-    @PostMapping("/ban-user")
-    public Result banUser(@Validated Integer id) {
-        return userService.ban(id);
+    public Result deleteUser() {
+        return userService.delete();
     }
 }

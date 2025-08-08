@@ -15,4 +15,6 @@ public interface WordMapper {
     void delete(int id);
     //根据日语单词查询单词卡
     List<Word> search(String keyWord);
+    //根据id名寻找单词
+    Word findWordById(Integer id);
 }
