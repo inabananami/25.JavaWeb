@@ -16,4 +16,7 @@
     <select id="findByUserIdAndWordId" parameterType="com.inabananami.japanesedemo.dao.pojo.ReviewLog">
         select * from review_log where user_id=#{userId} and word_id=#{wordId};
     </select>
+    <delete id="deleteReviewLog">
+        delete from review_log where id=#{reviewLogId};
+    </delete>
 </mapper>

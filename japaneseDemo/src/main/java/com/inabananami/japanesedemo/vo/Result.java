@@ -15,7 +15,7 @@ public class Result {
     private Object data;
 
     public static Result success(Object data) {
-        return new Result(true,200,"success",data);
+        return new Result(true,200,"操作成功",data);
     }
     public static Result fail(Integer code, String msg) {
         return new Result(false,code,msg,null);

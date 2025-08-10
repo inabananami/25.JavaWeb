@@ -35,7 +35,7 @@ public class Word {
 
     public WordVo toVo() {
         return new WordVo (
-            this.japaneseWord, this.chineseWord, this.romaji, this.kana, this.type, this.exampleSentence
+            this.id, this.japaneseWord, this.chineseWord, this.romaji, this.kana, this.type, this.exampleSentence
         );
     }
 

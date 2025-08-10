@@ -24,12 +24,16 @@ public class WordController {
         return Result.success(null);
     }
     @DeleteMapping()
-    public Result deleteWord(Integer id) {
-        wordService.delete(id);
-        return Result.success(null);
+    public Result deleteWord(@RequestParam Integer id) {
+        return wordService.delete(id);
     }
     @PostMapping("/search")
     public Result searchWord(String keyWord) {
         return wordService.search(keyWord);
+    }
+
+    @GetMapping("/list")
+    public Result listWord() {
+        return wordService.listAllWords();
     }
 }

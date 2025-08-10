@@ -21,4 +21,7 @@ public interface WordService {
 
     //findWordById(开发者用)
     Word findWordById(Integer id);
+
+    //列出所有单词（前端用）
+    Result listAllWords();
 }

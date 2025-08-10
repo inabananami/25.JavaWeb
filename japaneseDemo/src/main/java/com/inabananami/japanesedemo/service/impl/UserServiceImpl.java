@@ -41,6 +41,7 @@ public class UserServiceImpl implements UserService {
         //构建claims
         Map<String,Object> claims = new HashMap<>();
         claims.put("userId", user.getId());
+        claims.put("status", user.getStatus());
         claims.put("role", user.isAdmin() ? "admin" : "user");
 
         //生成并返回token

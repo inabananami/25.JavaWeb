@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class WordVo {
+    private Integer id;
     private String japaneseWord;
     private String chineseWord;
     private String romaji;

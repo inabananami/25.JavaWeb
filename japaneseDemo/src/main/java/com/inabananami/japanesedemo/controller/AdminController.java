@@ -14,7 +14,7 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
     //根据account寻找用户
-    @GetMapping()
+    @GetMapping("/search")
     public Result findUserByAccount(@RequestParam String account) {
         return adminService.findUserByAccount(account);
     }

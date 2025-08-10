@@ -34,4 +34,7 @@
     <select id="findWordById" parameterType="com.inabananami.japanesedemo.dao.pojo.Word">
         select * from word where id=#{id};
     </select>
+    <select id="listAll" parameterType="com.inabananami.japanesedemo.dao.pojo.Word">
+        select * from word;
+    </select>
 </mapper>

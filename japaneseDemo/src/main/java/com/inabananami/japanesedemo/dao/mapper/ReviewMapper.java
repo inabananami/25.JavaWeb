@@ -14,4 +14,6 @@ public interface ReviewMapper {
     void updateReviewLog(ReviewLog reviewLog);
     //通过用户id和单词id查询reviewLog表
     ReviewLog findByUserIdAndWordId(Integer userId, int wordId);
+    //删掉复习页面
+    void deleteReviewLog(Integer reviewLogId);
 }

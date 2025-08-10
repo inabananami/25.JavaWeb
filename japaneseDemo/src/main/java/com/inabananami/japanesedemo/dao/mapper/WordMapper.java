@@ -1,6 +1,7 @@
 package com.inabananami.japanesedemo.dao.mapper;
 
 import com.inabananami.japanesedemo.dao.pojo.Word;
+import com.inabananami.japanesedemo.vo.WordVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -17,4 +18,6 @@ public interface WordMapper {
     List<Word> search(String keyWord);
     //根据id名寻找单词
     Word findWordById(Integer id);
+    //查询所有单词
+    List<WordVo> listAll();
 }
