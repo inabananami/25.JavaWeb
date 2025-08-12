@@ -32,7 +32,7 @@ public class ReviewServiceImpl implements ReviewService {
         Map<String, Object> map = ThreadLocalUtil.get();
         Integer userId = (Integer) map.get("userId");
         Word word = wordService.findWordById(id);
-        if (word.getCreateUser().equals(userId)) {
+        if (!word.getCreateUser().equals(userId)) {
             return Result.fail(408, "无权访问这个单词");
         }
         ReviewLog reviewLog = reviewMapper.findReviewByWordId(word.getId());

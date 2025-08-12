@@ -1,6 +1,7 @@
 package com.inabananami.japanesedemo.dao.mapper;
 
 import com.inabananami.japanesedemo.dao.pojo.User;
+import com.inabananami.japanesedemo.dto.UserDto;
 import com.inabananami.japanesedemo.vo.UserVo;
 import com.inabananami.japanesedemo.vo.param.SignUpParam;
 import com.inabananami.japanesedemo.vo.param.UserParam;
@@ -21,7 +22,7 @@ public interface UserMapper {
     //模糊查询用户
     List<UserVo> search(String keyword);
     //更新用户
-    void update(Integer id);
+    void update(UserDto userDto);
     //注销用户
     void delete(Integer id);
 }

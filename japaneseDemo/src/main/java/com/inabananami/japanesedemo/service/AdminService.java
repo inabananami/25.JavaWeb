@@ -7,5 +7,5 @@ public interface AdminService {
     Result findUserByAccount(String account);
 
     //管理员封禁
-    Result ban(Integer id);
+    Result ban(String account);
 }

@@ -6,7 +6,7 @@
     <select id="findUserByAccount" parameterType="com.inabananami.japanesedemo.vo.UserVo">
         select * from user where account=#{account};
     </select>
-    <update id="ban">
-        update user set status='banned' where id=#{id};
+    <update id="banUserByAccount">
+        update user set status='banned' where account=#{account};
     </update>
 </mapper>

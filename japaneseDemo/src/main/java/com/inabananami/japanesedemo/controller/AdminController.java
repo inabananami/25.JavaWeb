@@ -1,11 +1,8 @@
 package com.inabananami.japanesedemo.controller;
 
 import com.inabananami.japanesedemo.service.AdminService;
-import com.inabananami.japanesedemo.service.UserService;
 import com.inabananami.japanesedemo.vo.Result;
-import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -20,7 +17,7 @@ public class AdminController {
     }
     //封禁用户
     @PostMapping("/ban")
-    public Result banUser(@RequestParam Integer id) {
-        return adminService.ban(id);
+    public Result banUser(@RequestParam String account) {
+        return adminService.ban(account);
     }
 }

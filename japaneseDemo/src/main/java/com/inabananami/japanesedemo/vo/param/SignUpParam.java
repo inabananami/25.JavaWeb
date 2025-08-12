@@ -14,7 +14,7 @@ public class SignUpParam {
     private String email;
     @Pattern(regexp = "^\\S{1,12}", message = "用户名介于1-12个字符")
     private String account;
-    @Pattern(regexp = "^\\S{7,12}", message = "密码介于7-12位")
+    @Pattern(regexp = "^\\S{7,15}", message = "密码介于7-15位")
     private String password;
     @Pattern(regexp = "^\\S{1,12}", message = "昵称介于1-12个字符")
     private String nickname;

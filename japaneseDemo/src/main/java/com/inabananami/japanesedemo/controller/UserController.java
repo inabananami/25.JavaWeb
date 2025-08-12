@@ -6,6 +6,7 @@ import com.inabananami.japanesedemo.service.UserService;
 import com.inabananami.japanesedemo.vo.Result;
 import com.inabananami.japanesedemo.vo.UserVo;
 import com.inabananami.japanesedemo.vo.param.SignUpParam;
+import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -29,13 +30,12 @@ public class UserController {
     }
     //模糊查询用户
     @GetMapping("/search-user")
-    public Result searchUser(String keyWord) {
+    public Result searchUser(@RequestParam String keyWord) {
         return userService.search(keyWord);
     }
-
     //更新用户信息
     @PostMapping("/update-user-info")
-    public Result updateUser(@RequestParam @Validated UserDto userDto) {
+    public Result updateUser(@RequestBody @Validated UserDto userDto) {
          return userService.update(userDto);
     }
     //注销用户

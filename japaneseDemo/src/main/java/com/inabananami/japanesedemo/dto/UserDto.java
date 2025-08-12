@@ -12,24 +12,19 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDto {
-    @Pattern(regexp = "^\\S{1,10}$", message = "账号不得为空")
-    private String account;
+    private Integer userId;
 
-    @Pattern(regexp = "^\\S{7,12}$", message = "密码长度应为7-12位")
-    private String password;
+    private String email;
 
     @Pattern(regexp = "^\\d{11}$", message = "手机号必须是11位数字")
     private String phoneNumber;
-
-    @NotNull(message = "邮箱不能为空")
-    private String email;
 
     @Pattern(regexp = "^(男|女|其他)$", message = "性别必须为“男”、“女”、“其他”")
     private String gender;
 
     private String avatar;
 
-    @Pattern(regexp = "^\\S{5,11}$", message = "昵称长度应为5-11位")
+    @Pattern(regexp = "^\\S{1,11}$", message = "昵称长度应为1-11位")
     private String nickname;
 
     private LocalDate birthday;
@@ -38,4 +33,6 @@ public class UserDto {
     private String languageLevel;
 
     private Integer dailyTarget;
+
+    private Integer knownWordCount;
 }

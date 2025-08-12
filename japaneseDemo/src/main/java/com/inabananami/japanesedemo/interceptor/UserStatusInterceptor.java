@@ -38,6 +38,7 @@ public class UserStatusInterceptor implements HandlerInterceptor {
 
         Integer userId = ((Number) claims.get("userId")).intValue();
         String status = (String) claims.get("status");
+        Boolean isAdmin = (Boolean) claims.get("role");
 
         //检查账户状态
         if ("inactive".equals(status) || "banned".equals(status)) {
@@ -48,6 +49,7 @@ public class UserStatusInterceptor implements HandlerInterceptor {
         Map<String, Object> userInfo = new HashMap<>();
         userInfo.put("userId", userId);
         userInfo.put("status", status);
+        userInfo.put("role", isAdmin);
         ThreadLocalUtil.set(userInfo);
 
         return true;

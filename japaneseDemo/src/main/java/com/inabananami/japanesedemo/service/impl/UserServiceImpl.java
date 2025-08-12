@@ -10,9 +10,6 @@ import com.inabananami.japanesedemo.utils.ThreadLocalUtil;
 import com.inabananami.japanesedemo.vo.Result;
 import com.inabananami.japanesedemo.vo.UserVo;
 import com.inabananami.japanesedemo.vo.param.SignUpParam;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwt;
-import io.jsonwebtoken.JwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +21,7 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
+
     //用户注册
     public Result signUp(SignUpParam signUpParam) {
         String encodedPassWord = BCryptUtil.encode(signUpParam.getPassword());
@@ -42,7 +40,7 @@ public class UserServiceImpl implements UserService {
         Map<String,Object> claims = new HashMap<>();
         claims.put("userId", user.getId());
         claims.put("status", user.getStatus());
-        claims.put("role", user.isAdmin() ? "admin" : "user");
+        claims.put("role", user.getAdmin() == 1);
 
         //生成并返回token
         String token = JwtUtil.generateToken(claims);
@@ -54,14 +52,14 @@ public class UserServiceImpl implements UserService {
     public Result update(UserDto userDto) {
         Map<String,Object> map = ThreadLocalUtil.get();
         Integer userId = (Integer) map.get("userId");
-        userMapper.update(userId);
+        userDto.setUserId(userId);
+        userMapper.update(userDto);
         return Result.success(null);
     }
      //查询用户（id）
      @Override
-    public Result findUserById(Integer id) {
-        User user = userMapper.findUserById(id);
-        return Result.success(user);
+    public User findUserById(Integer id) {
+        return userMapper.findUserById(id);
     }
     //模糊查询
     @Override

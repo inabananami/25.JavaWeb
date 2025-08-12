@@ -19,16 +19,24 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public Result findUserByAccount(String account) {
         Map<String,Object> map = ThreadLocalUtil.get();
-        boolean isAdmin = (boolean) map.get("admin");
-
+        Boolean isAdmin = (Boolean) map.get("role");
+        System.out.println(isAdmin);
+        if(!Boolean.TRUE.equals(isAdmin)){
+            return Result.fail(411, "权限不足");
+        }
         AdminUserVo adminUserVo = adminMapper.findUserByAccount(account);
         return Result.success(adminUserVo);
     }
 
     //管理员封禁
     @Override
-    public Result ban(Integer userId) {
-        adminMapper.ban(userId);
+    public Result ban(String account) {
+        Map<String,Object> map = ThreadLocalUtil.get();
+        Boolean isAdmin = (Boolean) map.get("role");
+        if(!Boolean.TRUE.equals(isAdmin)){
+            return Result.fail(411, "权限不足");
+        }
+        adminMapper.banUserByAccount(account);
         return Result.success(null);
     }
 }
