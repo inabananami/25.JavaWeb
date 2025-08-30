@@ -7,7 +7,7 @@
         insert into word(japanese_word,chinese_word,romaji,kana,type,example_sentence,create_user,create_time,update_time)
         values(#{japaneseWord},#{chineseWord},#{romaji},#{kana},#{type},#{exampleSentence},#{createUser},now(),now());
     </insert>
-    <update id="update" parameterType="com.inabananami.japanesedemo.dao.pojo.Word">
+    <update id="update">
         update word
         <set>
             <if test="japaneseWord!=null">japanese_word=#{japaneseWord},</if>
@@ -17,7 +17,7 @@
             <if test="type!=null">type=#{type},</if>
             <if test="exampleSentence!=null">example_sentence=#{exampleSentence},</if>
             <if test="createUser!=null">create_user=#{createUser},</if>
-            <if test="true">update_time=now()</if>
+            <if test="true">update_time=now(),</if>
         </set>
         <where>id=#{id}</where>
     </update>
@@ -30,6 +30,7 @@
         or chinese_word like concat('%',#{keyWord},'%')
         or kana like concat('%',#{keyWord},'%')
         or romaji like concat('%',#{keyWord},'%')
+        or type like concat('%',#{keyWord},'%')
     </select>
     <select id="findWordById" parameterType="com.inabananami.japanesedemo.dao.pojo.Word">
         select * from word where id=#{id};

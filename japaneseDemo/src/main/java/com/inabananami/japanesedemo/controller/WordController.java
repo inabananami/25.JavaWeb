@@ -20,8 +20,7 @@ public class WordController {
     }
     @PutMapping()
     public Result updateWord(@RequestBody @Validated(Word.Update.class) Word word) {
-        wordService.update(word);
-        return Result.success(null);
+        return wordService.update(word);
     }
     @DeleteMapping()
     public Result deleteWord(@RequestParam Integer id) {

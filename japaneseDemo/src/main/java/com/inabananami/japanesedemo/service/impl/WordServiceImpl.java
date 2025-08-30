@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -36,11 +37,12 @@ public class WordServiceImpl implements WordService {
     public Result update(Word word) {
         Map<String,Object> map = ThreadLocalUtil.get();
         Integer userId = (Integer) map.get("userId");
+        System.out.println(word.getId());
         Word newWord = wordMapper.findWordById(word.getId());
-        if(newWord.getCreateUser() != userId){
+        if(!newWord.getCreateUser().equals(userId)){
             return Result.fail(409, "此单词不是您的单词");
         }
-        wordMapper.update(newWord);
+        wordMapper.update(word);
         return Result.success(null);
     }
 

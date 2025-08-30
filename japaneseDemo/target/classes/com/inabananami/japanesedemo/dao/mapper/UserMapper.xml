@@ -23,6 +23,7 @@
             nickname like concat('%',#{keyword},'%')
             or phone_number=#{keyword}
             or email=#{keyword}
+            or language_level=#{keyword}
         );
     </select>
     <update id="update">
