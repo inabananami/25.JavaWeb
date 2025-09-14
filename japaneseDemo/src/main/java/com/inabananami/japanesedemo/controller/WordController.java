@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+
 @Validated
 @RestController
 @RequestMapping("/word")
@@ -32,7 +33,7 @@ public class WordController {
     }
 
     @GetMapping("/list")
-    public Result listWord() {
-        return wordService.listAllWords();
+    public Result listWord(Integer pageNum) {
+        return wordService.listWords(pageNum);
     }
 }

@@ -19,5 +19,5 @@ public interface WordMapper {
     //根据id名寻找单词
     Word findWordById(Integer id);
     //查询所有单词
-    List<WordVo> listAll();
+    List<WordVo> listWords(Integer userId, Integer pageSize, Integer offset);
 }

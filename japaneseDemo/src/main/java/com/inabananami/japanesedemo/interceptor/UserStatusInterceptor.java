@@ -22,6 +22,12 @@ public class UserStatusInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        // 处理预检请求
+        if ("OPTIONS".equals(request.getMethod())) {
+            response.setStatus(HttpServletResponse.SC_OK);
+            return false;  // 不再继续处理
+        }
+
         String token = request.getHeader("Authorization");
         //没有token的情况
         if (token == null) {

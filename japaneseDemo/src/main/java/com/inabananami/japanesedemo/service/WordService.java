@@ -2,9 +2,6 @@ package com.inabananami.japanesedemo.service;
 
 import com.inabananami.japanesedemo.dao.pojo.Word;
 import com.inabananami.japanesedemo.vo.Result;
-import com.inabananami.japanesedemo.vo.WordVo;
-
-import java.util.List;
 
 public interface WordService {
     //添加单词
@@ -22,6 +19,6 @@ public interface WordService {
     //findWordById(开发者用)
     Word findWordById(Integer id);
 
-    //列出所有单词（前端用）
-    Result listAllWords();
+    //分页查询
+    Result listWords(Integer pageNum);
 }

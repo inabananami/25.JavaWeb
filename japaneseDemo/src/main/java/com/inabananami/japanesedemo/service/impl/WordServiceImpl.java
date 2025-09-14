@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -78,8 +77,13 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public Result listAllWords() {
-        List<WordVo> wordList = wordMapper.listAll();
+    public Result listWords(Integer pageNum) {
+        Map<String,Object> map = ThreadLocalUtil.get();
+        Integer userId = (Integer) map.get("userId");
+        System.out.println(userId);
+        final int pageSize = 10;
+        Integer offset = (pageNum - 1) * pageSize;
+        List<WordVo> wordList = wordMapper.listWords(userId, pageSize, offset);
         return Result.success(wordList);
     }
 }
