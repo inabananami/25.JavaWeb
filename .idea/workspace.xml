@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fcb401f-7d11-4ec4-a0d4-b89da020ebab" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/blogExercise/blogExercise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDBC/JDBC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/MybatisDemo/target/test-classes/com/itheima/mybatisdemo/MybatisDemoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/mybatis/target/classes/com/itheima/mybatis/MybatisApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/mybatis/target/classes/com/itheima/mybatis/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/mybatis/target/classes/com/itheima/mybatis/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/mybatis/target/test-classes/com/itheima/mybatis/MybatisApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MybatisCode/mybatisCode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-event/target/classes/com/itheima/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/big-event/target/classes/com/itheima/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-event/target/test-classes/com/itheima/BigEventApplicationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-event/target/test-classes/com/itheima/JwtTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-event/target/test-classes/com/itheima/ThreadLocalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/BlogDemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/config/WebMVCConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/controller/ArticleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/controller/SysUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/controller/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/mapper/ArticleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/mapper/SysUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/mapper/TagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/mapper/TagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/pojo/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/pojo/ArticleBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/pojo/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/pojo/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/pojo/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/ArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/SysUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/TagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/impl/ArticleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/impl/SysUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/service/impl/TagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/vo/ArticleVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/vo/CatogoryVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/vo/TagVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/inabananami/blog/vo/params/PageParams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/mszlu/blog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/classes/com/mszlu/blog/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/target/test-classes/com/inabananami/blog/BlogDemoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/japaneseDemo/src/main/java/com/inabananami/japanesedemo/vo/param/ReviewParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/japaneseDemo/src/main/java/com/inabananami/japanesedemo/vo/param/ReviewParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/japaneseDemo/target/classes/com/inabananami/japanesedemo/vo/param/ReviewParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/japaneseDemo/target/classes/com/inabananami/japanesedemo/vo/param/ReviewParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/japaneseDemo/target/test-classes/com/inabananami/japanesedemo/JapaneseDemoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-starter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-code/spring-code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-code/springboot-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-code/springboot-mybatis/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="32tnUBX5tcskJSGwMYEQwPP0hpJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BlogApp.executor": "Run",
+    "Spring Boot.BlogExerciseApplication.executor": "Run",
+    "Spring Boot.JapaneseDemoApplication.executor": "Run",
+    "Spring Boot.MybatisApplication.executor": "Run",
+    "Spring Boot.MybatisDemoApplication.executor": "Run",
+    "Spring Boot.SpringBootStartApplication.executor": "Run",
+    "Spring Boot.SpringbootAutoConfigApplication.executor": "Run",
+    "Spring Boot.SpringbootMybatisApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="BlogApp" value="STOPPED" />
+              <entry key="JapaneseDemoApplication" value="FAILED" />
+              <entry key="MybatisDemoApplication" value="STOPPED" />
+              <entry key="SpringBootStartApplication" value="FAILED" />
+              <entry key="SpringbootAutoConfigApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.JapaneseDemoApplication">
+    <configuration name="BlogApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mszlu.blog.BlogApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogExerciseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="blogExercise" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="inabananami.blogexercise.BlogExerciseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JapaneseDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="japaneseDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.inabananami.japanesedemo.JapaneseDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.mybatis.MybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MybatisDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.mybatisdemo.MybatisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SpringBootStart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.springbootstart.SpringBootStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootAutoConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-auto-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.springbootautoconfig.SpringbootAutoConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.springbootmybatis.SpringbootMybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="9fcb401f-7d11-4ec4-a0d4-b89da020ebab" name="更改" comment="" />
+      <created>1758248750812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758248750812</updated>
+      <workItem from="1758248752430" duration="371000" />
+      <workItem from="1758249139710" duration="66000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

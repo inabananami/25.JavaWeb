@@ -57,12 +57,6 @@
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
 
-<!--        自定义的mybatis启动依赖        -->
-        <dependency>
-            <groupId>com.itheima</groupId>
-            <artifactId>dmybatis-spring-boot-starter</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <!--        lombok       -->
         <dependency>
             <groupId>org.projectlombok</groupId>

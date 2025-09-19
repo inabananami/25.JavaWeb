@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/japaneseDemo/src/main/resources/com/inabananami/japanesedemo/dao/mapper/WordMapper.xml" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/../BaiduNetdiskDownload/02_资料/04_综合案例资料/02_后台资料/01_sql/big_event.sql" dialect="MySQL" />
-  </component>
-</project>

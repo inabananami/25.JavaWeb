@@ -4,40 +4,23 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/MybatisDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringBootStart/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-create-manual/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-config-file/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-register/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-auto-config/pom.xml" />
-        <option value="$PROJECT_DIR$/dmybatis-spring-boot-autoconfigure/pom.xml" />
-        <option value="$PROJECT_DIR$/dmybatis-spring-boot-starter/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-code/springboot-auto-config/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-code/springboot-create-manual/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-code/springboot-mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-code/SpringBootStart/pom.xml" />
+        <option value="$PROJECT_DIR$/blog/pom.xml" />
+        <option value="$PROJECT_DIR$/big-event/pom.xml" />
         <option value="$PROJECT_DIR$/MybatisCode/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/MybatisCode/MybatisDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/SpringBootStart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-auto-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/springboot-create-manual/pom.xml" />
         <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-starter/pom.xml" />
-        <option value="$PROJECT_DIR$/big-event/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCode/springboot-auto-config/pom.xml" />
-        <option value="$PROJECT_DIR$/JapaneseDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/xm-blog/pom.xml" />
-        <option value="$PROJECT_DIR$/blogDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/blog/pom.xml" />
-        <option value="$PROJECT_DIR$/japaneseAnkiDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/blogExercise/pom.xml" />
         <option value="$PROJECT_DIR$/japaneseDemo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/SpringCode/springboot-auto-config/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-config-file/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-register/pom.xml" />
-        <option value="$PROJECT_DIR$/xm-blog/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-code/dmybatis-spring-boot-starter/pom.xml" />
       </set>
     </option>
   </component>

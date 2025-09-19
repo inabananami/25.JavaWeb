@@ -4,8 +4,8 @@
     <file url="file://$PROJECT_DIR$/MybatisCode/MybatisDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MybatisCode/mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/big-event/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/big-event/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/blog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/blogExercise/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/japaneseDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-code/SpringBootStart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-code/dmybatis-spring-boot-autoconfigure/src/main/java" charset="UTF-8" />
@@ -15,8 +15,5 @@
     <file url="file://$PROJECT_DIR$/spring-code/springboot-auto-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-code/springboot-create-manual/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-code/springboot-mybatis/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-config-file/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-register/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/xm-blog/src/main/java" charset="UTF-8" />
   </component>
 </project>
